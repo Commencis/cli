@@ -1,0 +1,56 @@
+{
+  "name": "@commencis/cli",
+  "version": "0.0.1",
+  "description": "Commencis's CLI tool for creating & managing projects",
+  "author": "Commencis WEB Team",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "commencis": "bin/commencis"
+  },
+  "homepage": "https://github.com/commencis/cli#readme",
+  "bugs": {
+    "url": "https://github.com/commencis/cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commencis/cli.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 20.18"
+  },
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "lint:check:types": "tsc --noEmit",
+    "lint:check:js": "eslint .",
+    "lint:fix:js": "eslint . --fix",
+    "lint:check:format": "prettier . --check",
+    "lint:fix:format": "prettier . --write",
+    "lint": "pnpm run \"/^lint:check:.*/\"",
+    "lint:fix": "pnpm run \"/^lint:fix:.*/\"",
+    "ci:review": "pnpm run lint",
+    "precommit": "lint-staged",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commencis/commitlint-config": "1.1.0",
+    "@commencis/eslint-config": "1.2.0",
+    "@commencis/prettier-config": "1.1.0",
+    "@commitlint/cli": "19.5.0",
+    "@types/node": "22.8.1",
+    "eslint": "9.13.0",
+    "husky": "9.1.6",
+    "lint-staged": "15.2.10",
+    "prettier": "3.3.3",
+    "tsup": "8.3.5",
+    "typescript": "5.6.3"
+  },
+  "dependencies": {
+    "enquirer": "2.4.1"
+  }
+}

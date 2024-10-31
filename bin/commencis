@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const versionFlags = ['v', '-v', '--v', 'version', '-version', '--version'];
+
+if (versionFlags.includes(process.argv[2])) {
+  const { default: packageJson } = await import('../package.json', {
+    with: { type: 'json' },
+  });
+
+  console.log(packageJson.version);
+  process.exit(0);
+}
+
+const cli = await import('../dist/cli.cjs');
+cli.run(process.argv);
