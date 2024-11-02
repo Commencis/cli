@@ -2,11 +2,7 @@
   "name": "@commencis/cli",
   "version": "0.0.1",
   "description": "Commencis's CLI tool for creating & managing projects",
-  "author": {
-    "name": "Commencis WEB Team",
-    "email": "wfedevelopers@commencis.com",
-    "url": "https://commencis.com/"
-  },
+  "author": "Commencis WFE Team <wfedevelopers@commencis.com> (https://commencis.com)",
   "license": "Apache-2.0",
   "homepage": "https://github.com/commencis/cli#readme",
   "bugs": {
@@ -44,6 +40,9 @@
     "precommit": "lint-staged",
     "prepare": "husky"
   },
+  "dependencies": {
+    "enquirer": "2.4.1"
+  },
   "devDependencies": {
     "@commencis/commitlint-config": "1.1.0",
     "@commencis/eslint-config": "1.2.0",
@@ -56,8 +55,5 @@
     "prettier": "3.3.3",
     "tsup": "8.3.5",
     "typescript": "5.6.3"
-  },
-  "dependencies": {
-    "enquirer": "2.4.1"
   }
 }
