@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 400px)" srcset="./assets/commencis-cli-logo-mobile.png">
-  <img src="./assets/commencis-cli-logo.png" alt="Commencis JS Toolkit Logo">
+  <img src="./assets/commencis-cli-logo.png" alt="Commencis CLI Logo">
 </picture>
 
 <h1 align="center">
