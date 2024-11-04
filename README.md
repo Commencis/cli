@@ -26,7 +26,7 @@ Before you start, ensure you are in the directory where you want to create your 
 To create a new project interactively, run:
 
 ```bash
-npx commencis create
+npx @commencis/cli create
 ```
 
 ### Non-Interactive Mode
@@ -34,13 +34,13 @@ npx commencis create
 To create a new project without prompts, use the following command:
 
 ```bash
-npx commencis create [project-name] [options]
+npx @commencis/cli create [project-name] [options]
 ```
 
 For example, to create a project named “my-app” using the React Vite template, you would run:
 
 ```bash
-npx commencis create my-app --template react-vite
+npx @commencis/cli create my-app --template react-vite
 ```
 
 ## Options
