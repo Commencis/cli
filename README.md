@@ -17,6 +17,48 @@ The Commencis CLI serves as a comprehensive command-line interface for effortles
 
 This tool generates carefully crafted starter templates designed by [Commencis](https://www.commencis.com/) to meet the needs of modern applications. With a focus on best practices and clean code, the Commencis CLI empowers developers to kickstart projects with confidence.
 
+## Usage:
+
+Before you start, ensure you are in the directory where you want to create your project.
+
+### Interactive Mode
+
+To create a new project interactively, run:
+
+```bash
+npx commencis create
+```
+
+### Non-Interactive Mode
+
+To create a new project without prompts, use the following command:
+
+```bash
+npx commencis create [project-name] [options]
+```
+
+For example, to create a project named “my-app” using the React Vite template, you would run:
+
+```bash
+npx commencis create my-app --template react-vite
+```
+
+## Options
+
+- `--template <template-name>`: Specify the template you want to use (e.g., react-vite, etc.).
+
+## Important Notes
+
+> [!WARNING]
+> Don’t forget to initialize git in your project:
+>
+> `git init`
+
+> [!TIP]
+> After creating your project, run the following command to install dependencies:
+>
+> `pnpm install`
+
 ## For Contributors:
 
 ### Prerequisites
