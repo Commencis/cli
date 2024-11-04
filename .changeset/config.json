@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.0.3/schema.json",
+  "changelog": [
+    "@svitejs/changesets-changelog-github-compact",
+    { "repo": "commencis/cli" }
+  ],
+  "commit": false,
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": []
+}

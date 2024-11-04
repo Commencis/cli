@@ -11,5 +11,5 @@ if (versionFlags.includes(process.argv[2])) {
   process.exit(0);
 }
 
-const cli = await import('../dist/cli.cjs');
+const cli = await import('../dist/cli.js');
 cli.run(process.argv);

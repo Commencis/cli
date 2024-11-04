@@ -10,6 +10,11 @@ export default defineConfig(
   ...commencisTypescriptConfig,
   ...commencisPrettierConfig,
   {
+    rules: {
+      'no-console': 'off',
+    },
+  },
+  {
     ignores: ['**/dist/', 'coverage'],
   }
 );
