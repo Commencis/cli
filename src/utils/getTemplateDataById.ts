@@ -1,6 +1,5 @@
-import { TemplateData, TemplateId } from '@/types';
-
 import { TEMPLATE_DATA } from '@/constants';
+import { TemplateData, TemplateId } from '@/types';
 
 export function getTemplateDataById(id: TemplateId): TemplateData {
   const templateData = Object.values(TEMPLATE_DATA).find(
