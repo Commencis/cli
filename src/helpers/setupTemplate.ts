@@ -3,11 +3,11 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { promisify } from 'node:util';
+
 import ora from 'ora';
 
-import { getTemplateDataById } from '@/utils';
-
 import { TemplateId } from '@/types';
+import { getTemplateDataById } from '@/utils';
 
 import { cleanUpDirectory } from './cleanUpDirectory';
 import { cleanUpTemplateFiles } from './cleanUpTemplateFiles';

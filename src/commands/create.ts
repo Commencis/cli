@@ -1,10 +1,9 @@
 import chalk from 'chalk';
 
+import { setupTemplate } from '@/helpers';
+import { TemplateId } from '@/types';
 import { printLogo, validateProjectName, validateTemplate } from '@/utils';
 
-import { TemplateId } from '@/types';
-
-import { setupTemplate } from '@/helpers/setupTemplate';
 import { getProjectName, getSelectedTemplate } from '@/prompts';
 
 export type CreateActionOptions = {
