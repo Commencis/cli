@@ -1,5 +1,18 @@
 # @commencis/cli
 
+## 1.1.1
+
+### Patch Changes
+
+- update dependency: @commencis/eslint-config@1.4.4 ([#4](https://github.com/Commencis/cli/pull/4))
+
+  - update folder structure & exports
+  - comply new import sort rules
+
+- update dependency: eslint@9.14.0 ([#5](https://github.com/Commencis/cli/pull/5))
+
+- update dependency: @types/node@22.9.0 ([#10](https://github.com/Commencis/cli/pull/10))
+
 ## 1.1.0
 
 ### Minor Changes
