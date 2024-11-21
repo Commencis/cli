@@ -55,7 +55,7 @@
     "@commencis/commitlint-config": "1.1.0",
     "@commencis/eslint-config": "1.4.4",
     "@commencis/prettier-config": "1.1.0",
-    "@commitlint/cli": "19.5.0",
+    "@commitlint/cli": "19.6.0",
     "@svitejs/changesets-changelog-github-compact": "1.2.0",
     "@types/node": "22.9.1",
     "@types/validate-npm-package-name": "4.0.2",
