@@ -1,5 +1,15 @@
 # @commencis/cli
 
+## 1.1.2
+
+### Patch Changes
+
+- update deps: eslint@9.15.0 ([#14](https://github.com/Commencis/cli/pull/14))
+
+- update deps: @types/node@22.10.0 ([#22](https://github.com/Commencis/cli/pull/22))
+
+- update deps: @commencis/eslint-config@1.5.1 ([#21](https://github.com/Commencis/cli/pull/21))
+
 ## 1.1.1
 
 ### Patch Changes
