@@ -1,5 +1,13 @@
 # @commencis/cli
 
+## 1.2.0
+
+### Minor Changes
+
+- fix: formatting issues on json files ([#35](https://github.com/Commencis/cli/pull/35))
+
+- feat: introduce template dependencies to use starters with fix version and track with git-tags ([#35](https://github.com/Commencis/cli/pull/35))
+
 ## 1.1.2
 
 ### Patch Changes
