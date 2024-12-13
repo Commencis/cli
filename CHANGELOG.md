@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 1.2.2
+
+### Patch Changes
+
+- update dependency: @commencis/starter-react-vite@1.2.6 ([#39](https://github.com/Commencis/cli/pull/39))
+
 ## 1.2.1
 
 ### Patch Changes
