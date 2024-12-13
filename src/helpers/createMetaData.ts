@@ -16,14 +16,11 @@ export async function createMetaData(
     templateVersion: data.templateVersion,
     creationDate: new Date().toISOString(),
   };
+  const formattedMetaData = JSON.stringify(metaData, null, 2) + '\n';
 
   try {
     // Write the metadata to commencis.json
-    await fs.writeFile(
-      configFilePath,
-      JSON.stringify(metaData, null, 2),
-      'utf-8'
-    );
+    await fs.writeFile(configFilePath, formattedMetaData, 'utf-8');
   } catch (error) {
     console.error(
       `Failed to create ${configFilePath}: ${error instanceof Error ? error.message : error}`
