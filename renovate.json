@@ -5,7 +5,8 @@
   "customManagers": [
     {
       "customType": "regex",
-      "depNameTemplate": "commencis/starter-react-vite",
+      "depNameTemplate": "@commencis/starter-react-vite",
+      "packageNameTemplate": "commencis/starter-react-vite",
       "fileMatch": ["^package\\.json$"],
       "matchStrings": [
         "\"@commencis/starter-react-vite\": \"(?<currentValue>[^\"]+)\""
