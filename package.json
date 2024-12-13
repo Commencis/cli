@@ -67,6 +67,6 @@
     "typescript": "5.7.2"
   },
   "templateDependencies": {
-    "@commencis/starter-react-vite": "1.2.4"
+    "@commencis/starter-react-vite": "1.2.5"
   }
 }
