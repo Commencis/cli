@@ -1,8 +1,6 @@
-import { exec } from 'node:child_process';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { promisify } from 'node:util';
 
 import ora from 'ora';
 
@@ -11,17 +9,16 @@ import { getTemplateDataById } from '@/utils';
 
 import { cleanUpDirectory } from './cleanUpDirectory';
 import { cleanUpTemplateFiles } from './cleanUpTemplateFiles';
+import { cloneTemplateRepository } from './cloneTemplateRepository';
 import { createMetaData } from './createMetaData';
 import { updatePackageData } from './updatePackageData';
-
-const execAsync = promisify(exec);
 
 export async function setupTemplate(
   templateId: TemplateId,
   projectName: string,
   targetPath: string = process.cwd()
 ): Promise<void> {
-  const templateData = getTemplateDataById(templateId);
+  const { name, url, version, filesToRemove } = getTemplateDataById(templateId);
 
   const targetDir = path.resolve(targetPath, projectName);
   const tempDir = path.join(os.tmpdir(), `commencis-tmp-${Date.now()}`);
@@ -29,10 +26,10 @@ export async function setupTemplate(
   const spinner = ora('Setting up template').start();
 
   try {
-    await execAsync(`git clone ${templateData.url} ${tempDir}`);
+    await cloneTemplateRepository({ url, version, tempDir });
 
     // Remove unwanted files and folders
-    await cleanUpTemplateFiles(tempDir, templateData.filesToRemove);
+    await cleanUpTemplateFiles(tempDir, filesToRemove);
 
     // Update package.json
     const { templateVersion } = await updatePackageData(tempDir, projectName);
@@ -43,11 +40,12 @@ export async function setupTemplate(
     // Create metadata file
     await createMetaData(targetDir, { templateId, templateVersion });
 
-    spinner.succeed(`Project created at ${targetDir}`);
+    spinner.succeed(
+      `Project created at ${targetDir} with ${name}: v${templateVersion}`
+    );
   } catch (error) {
     spinner.fail(`Failed to set up template: ${error}`);
   } finally {
     await cleanUpDirectory(tempDir);
-    spinner.succeed(`Ready to start!`);
   }
 }

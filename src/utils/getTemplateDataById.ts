@@ -1,10 +1,11 @@
-import { TEMPLATE_DATA } from '@/constants';
-import { TemplateData, TemplateId } from '@/types';
+import { templateConfigMap, TemplateData } from '@/config';
+import { TemplateId } from '@/types';
+
+import packageJson from '../../package.json' with { type: 'json' };
 
 export function getTemplateDataById(id: TemplateId): TemplateData {
-  const templateData = Object.values(TEMPLATE_DATA).find(
-    (template) => template.id === id
-  ) as TemplateData;
+  const templateConfig = templateConfigMap[id];
+  const version = packageJson.templateDependencies[templateConfig.name];
 
-  return templateData;
+  return { ...templateConfig, version };
 }
