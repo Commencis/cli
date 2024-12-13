@@ -1,5 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>commencis/js-toolkit//shared/renovate/default"],
-  "postUpdateOptions": ["pnpmDedupe"]
+  "postUpdateOptions": ["pnpmDedupe"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "depNameTemplate": "commencis/starter-react-vite",
+      "fileMatch": ["^package\\.json$"],
+      "matchStrings": [
+        "\"@commencis/starter-react-vite\": \"(?<currentValue>[^\"]+)\""
+      ],
+      "extractVersionTemplate": "^v(?<version>.*)$",
+      "datasourceTemplate": "github-tags"
+    }
+  ]
 }

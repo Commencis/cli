@@ -14,11 +14,9 @@ export async function updatePackageData(
     packageJson.name = projectName;
     packageJson.version = '1.0.0';
 
-    await fs.writeFile(
-      packageJsonPath,
-      JSON.stringify(packageJson, null, 2),
-      'utf-8'
-    );
+    const formattedPackageJson = JSON.stringify(packageJson, null, 2) + '\n';
+
+    await fs.writeFile(packageJsonPath, formattedPackageJson, 'utf-8');
     return { templateVersion };
   } catch (error) {
     console.error(
