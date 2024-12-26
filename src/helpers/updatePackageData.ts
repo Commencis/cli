@@ -8,14 +8,25 @@ export async function updatePackageData(
   try {
     const packageJsonPath = path.join(directoryPath, 'package.json');
     const packageJsonData = await fs.readFile(packageJsonPath, 'utf-8');
-    const packageJson = JSON.parse(packageJsonData);
+    let packageJson = JSON.parse(packageJsonData);
     const templateVersion = packageJson.version;
 
     packageJson.name = projectName;
     packageJson.version = '1.0.0';
+
+    delete packageJson.license;
     delete packageJson.description;
     delete packageJson.author;
-    delete packageJson.license;
+
+    // To add 'private' after common locations such as after 'license'
+    const { name, version, ...rest } = packageJson;
+    packageJson = {
+      name,
+      version,
+      license: 'UNLICENSED',
+      private: true,
+      ...rest,
+    };
 
     const formattedPackageJson = JSON.stringify(packageJson, null, 2) + '\n';
 
