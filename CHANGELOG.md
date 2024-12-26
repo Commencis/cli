@@ -1,5 +1,13 @@
 # @commencis/cli
 
+## 1.2.3
+
+### Patch Changes
+
+- chore(deps): update dependency chalk to v5.4.1 ([#44](https://github.com/Commencis/cli/pull/44))
+
+- chore(deps): update dependency @commencis/starter-react-vite to v1.2.7 ([#48](https://github.com/Commencis/cli/pull/48))
+
 ## 1.2.2
 
 ### Patch Changes
