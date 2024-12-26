@@ -2,4 +2,4 @@
 '@commencis/cli': patch
 ---
 
-alter package.json file content
+feat: update package.json initial values on generation
