@@ -13,6 +13,9 @@ export async function updatePackageData(
 
     packageJson.name = projectName;
     packageJson.version = '1.0.0';
+    delete packageJson.description;
+    delete packageJson.author;
+    delete packageJson.license;
 
     const formattedPackageJson = JSON.stringify(packageJson, null, 2) + '\n';
 
