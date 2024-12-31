@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 1.2.4
+
+### Patch Changes
+
+- feat: update package.json initial values on generation ([#50](https://github.com/Commencis/cli/pull/50))
+
 ## 1.2.3
 
 ### Patch Changes
