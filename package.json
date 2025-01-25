@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "chalk": "5.4.1",
-    "commander": "12.1.0",
+    "commander": "13.1.0",
     "enquirer": "2.4.1",
     "gradient-string": "3.0.0",
     "ora": "8.1.1",
