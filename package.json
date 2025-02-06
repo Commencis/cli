@@ -1,6 +1,6 @@
 {
   "name": "@commencis/cli",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Commencis's CLI tool for creating & managing projects",
   "author": "Commencis WFE Team <wfedevelopers@commencis.com> (https://commencis.com)",
   "license": "Apache-2.0",

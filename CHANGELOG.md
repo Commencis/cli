@@ -1,5 +1,13 @@
 # @commencis/cli
 
+## 1.2.6
+
+### Patch Changes
+
+- chore(deps): update dependency @commencis/starter-react-vite to v1.3.0 ([#75](https://github.com/Commencis/cli/pull/75))
+
+- chore(deps): update dependency ora to v8.2.0 ([#80](https://github.com/Commencis/cli/pull/80))
+
 ## 1.2.5
 
 ### Patch Changes
