@@ -53,7 +53,7 @@
   "devDependencies": {
     "@changesets/cli": "2.27.12",
     "@commencis/commitlint-config": "1.1.2",
-    "@commencis/eslint-config": "1.5.7",
+    "@commencis/eslint-config": "1.5.8",
     "@commencis/prettier-config": "1.1.1",
     "@commitlint/cli": "19.7.1",
     "@svitejs/changesets-changelog-github-compact": "1.2.0",
