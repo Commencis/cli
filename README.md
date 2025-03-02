@@ -69,7 +69,7 @@ Before you begin, ensure you have `node: >= 20.18` installed on your system.
 
 #### pnpm
 
-This project uses `pnpm@9.12.3` as the package manager. You can install it either by activating with `corepack` which is the recommended way:
+This project uses `pnpm` as the package manager. You can install it either by activating with `corepack` which is the recommended way:
 
 ```bash
 corepack prepare pnpm@latest --activate
@@ -109,4 +109,4 @@ We welcome contributions to improve this project. Feel free to open issues or pu
 
 This project is licensed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0) - see the [LICENSE](./LICENSE) file for details.
 
-© [Commencis](https://www.commencis.com/), 2024. All rights reserved.
+© [Commencis](https://www.commencis.com/), 2025. All rights reserved.
