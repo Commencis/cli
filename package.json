@@ -64,7 +64,7 @@
     "lint-staged": "15.4.3",
     "prettier": "3.5.3",
     "tsup": "8.4.0",
-    "typescript": "5.7.3"
+    "typescript": "5.8.2"
   },
   "templateDependencies": {
     "@commencis/starter-react-vite": "2.1.0"
