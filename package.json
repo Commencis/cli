@@ -47,7 +47,9 @@
     "commander": "13.1.0",
     "enquirer": "2.4.1",
     "gradient-string": "3.0.0",
+    "handlebars": "4.7.8",
     "ora": "8.2.0",
+    "simple-git": "3.27.0",
     "validate-npm-package-name": "6.0.0"
   },
   "devDependencies": {
@@ -67,6 +69,7 @@
     "typescript": "5.8.2"
   },
   "templateDependencies": {
-    "@commencis/starter-react-vite": "2.1.0"
+    "@commencis/starter-react-vite": "2.1.0",
+    "@commencis/template-markdown": "0.0.1"
   }
 }

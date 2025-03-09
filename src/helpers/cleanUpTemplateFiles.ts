@@ -3,8 +3,11 @@ import path from 'node:path';
 
 export async function cleanUpTemplateFiles(
   directoryPath: string,
-  itemsToRemove: string[]
+  itemsToRemove?: string[]
 ): Promise<void> {
+  if (!itemsToRemove) {
+    return;
+  }
   await Promise.all(
     itemsToRemove.map(async (item) => {
       const itemPath = path.join(directoryPath, item);
