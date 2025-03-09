@@ -1,9 +1,10 @@
-import { TemplateId } from '@/types';
+import { ExtensionId, TemplateId } from '@/types';
 
 type TemplateConfig = {
   name: string;
   url: string;
-  filesToRemove: string[];
+  filesToRemove?: string[];
+  path?: string;
 };
 export type TemplateData = TemplateConfig & { version: string };
 
@@ -22,4 +23,11 @@ export const templateConfigMap = {
       'renovate.json',
     ],
   },
-} as const satisfies Record<TemplateId, TemplateConfig>;
+  'template-markdown': {
+    name: '@commencis/template-markdown',
+    url: 'https://github.com/Commencis/starter-extensions.git',
+    path: 'templates/markdown',
+  },
+} as const satisfies Record<TemplateId | ExtensionId, TemplateConfig>;
+
+export const extensionConfigMap = {};
