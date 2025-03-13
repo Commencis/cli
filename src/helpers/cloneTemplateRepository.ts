@@ -1,20 +1,21 @@
-import { exec } from 'node:child_process';
-import { promisify } from 'node:util';
-
-const execAsync = promisify(exec);
+import { git } from '@/lib';
 
 type CloneTemplateArgs = {
-  url: string;
+  repoPath: string;
+  localPath: string;
+  versionPrefix?: string;
   version: string;
-  tempDir: string;
 };
 
 export async function cloneTemplateRepository({
-  url,
+  repoPath,
+  localPath,
+  versionPrefix,
   version,
-  tempDir,
 }: CloneTemplateArgs): Promise<void> {
-  await execAsync(
-    `git clone --branch v${version} --single-branch ${url} ${tempDir}`
-  );
+  await git.clone(repoPath, localPath, [
+    '--branch',
+    `${versionPrefix}${version}`,
+    '--single-branch',
+  ]);
 }
