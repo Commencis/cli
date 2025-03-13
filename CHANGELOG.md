@@ -1,5 +1,17 @@
 # @commencis/cli
 
+## 1.4.0
+
+### Minor Changes
+
+- chore: update minimum node version to v22.14 ([#111](https://github.com/Commencis/cli/pull/111))
+
+- feat: generate readme.md dynamically from template with context ([#107](https://github.com/Commencis/cli/pull/107))
+
+### Patch Changes
+
+- chore(deps): update dependency @commencis/starter-react-vite to v2.2.1 ([#109](https://github.com/Commencis/cli/pull/109))
+
 ## 1.3.0
 
 ### Minor Changes
