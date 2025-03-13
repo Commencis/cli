@@ -7,16 +7,6 @@ type CloneTemplateArgs = {
   version: string;
 };
 
-/* export async function cloneTemplateRepository({
-  url,
-  version,
-  tempDir,
-}: CloneTemplateArgs): Promise<void> {
-  await execAsync(
-    `git clone --branch v${version} --single-branch ${url} ${tempDir}`
-  );
-} */
-
 export async function cloneTemplateRepository({
   repoPath,
   localPath,
