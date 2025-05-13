@@ -25,7 +25,7 @@
   "engines": {
     "node": ">=22.14"
   },
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.11.0",
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
