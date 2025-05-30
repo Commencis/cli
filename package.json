@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "chalk": "5.4.1",
-    "commander": "13.1.0",
+    "commander": "14.0.0",
     "enquirer": "2.4.1",
     "gradient-string": "3.0.0",
     "handlebars": "4.7.8",
