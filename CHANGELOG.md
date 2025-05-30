@@ -1,5 +1,13 @@
 # @commencis/cli
 
+## 1.4.1
+
+### Patch Changes
+
+- chore(deps): update dependency commander to v14 ([#136](https://github.com/Commencis/cli/pull/136))
+
+- chore(deps): update dependency @commencis/starter-react-vite to v2.3.0 ([#121](https://github.com/Commencis/cli/pull/121))
+
 ## 1.4.0
 
 ### Minor Changes
