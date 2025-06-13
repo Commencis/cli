@@ -69,7 +69,7 @@
     "typescript": "5.8.3"
   },
   "templateDependencies": {
-    "@commencis/starter-react-vite": "2.3.0",
+    "@commencis/starter-react-vite": "2.4.0",
     "@commencis/template-markdown": "0.0.1"
   }
 }
