@@ -50,7 +50,7 @@
     "handlebars": "4.7.8",
     "ora": "8.2.0",
     "simple-git": "3.28.0",
-    "validate-npm-package-name": "6.0.0"
+    "validate-npm-package-name": "6.0.1"
   },
   "devDependencies": {
     "@changesets/cli": "2.29.5",
