@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 1.4.3
+
+### Patch Changes
+
+- chore(deps): update dependency @commencis/starter-react-vite to v2.5.0 ([#158](https://github.com/Commencis/cli/pull/158))
+
 ## 1.4.2
 
 ### Patch Changes
