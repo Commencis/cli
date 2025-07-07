@@ -1,5 +1,15 @@
 # @commencis/cli
 
+## 1.4.2
+
+### Patch Changes
+
+- chore(deps): update dependency simple-git to v3.28.0 ([#150](https://github.com/Commencis/cli/pull/150))
+
+- chore(deps): update dependency validate-npm-package-name to v6.0.1 ([#149](https://github.com/Commencis/cli/pull/149))
+
+- chore(deps): update dependency @commencis/starter-react-vite to v2.4.0 ([#151](https://github.com/Commencis/cli/pull/151))
+
 ## 1.4.1
 
 ### Patch Changes
@@ -91,7 +101,6 @@
 ### Patch Changes
 
 - update dependency: @commencis/eslint-config@1.4.4 ([#4](https://github.com/Commencis/cli/pull/4))
-
   - update folder structure & exports
   - comply new import sort rules
 
