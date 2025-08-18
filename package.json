@@ -43,7 +43,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "chalk": "5.4.1",
+    "chalk": "5.6.0",
     "commander": "14.0.0",
     "enquirer": "2.4.1",
     "gradient-string": "3.0.0",
