@@ -1,5 +1,15 @@
 # @commencis/cli
 
+## 1.4.4
+
+### Patch Changes
+
+- chore(deps): update dependency validate-npm-package-name to v6.0.2 ([#164](https://github.com/Commencis/cli/pull/164))
+
+- chore(deps): update dependency @commencis/starter-react-vite to v2.6.0 ([#168](https://github.com/Commencis/cli/pull/168))
+
+- chore(deps): update dependency chalk to v5.6.0 ([#169](https://github.com/Commencis/cli/pull/169))
+
 ## 1.4.3
 
 ### Patch Changes
