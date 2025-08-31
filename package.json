@@ -59,7 +59,7 @@
     "@commencis/prettier-config": "2.0.0",
     "@commitlint/cli": "19.8.1",
     "@svitejs/changesets-changelog-github-compact": "1.2.0",
-    "@types/node": "22.17.2",
+    "@types/node": "22.18.0",
     "@types/validate-npm-package-name": "4.0.2",
     "eslint": "9.34.0",
     "husky": "9.1.7",
