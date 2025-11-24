@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 1.4.5
+
+### Patch Changes
+
+- chore(deps): update dependency chalk to v5.6.2 ([#186](https://github.com/Commencis/cli/pull/186))
+
 ## 1.4.4
 
 ### Patch Changes
