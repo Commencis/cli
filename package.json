@@ -53,7 +53,7 @@
     "validate-npm-package-name": "6.0.2"
   },
   "devDependencies": {
-    "@changesets/cli": "2.29.6",
+    "@changesets/cli": "2.29.8",
     "@commencis/commitlint-config": "1.1.4",
     "@commencis/eslint-config": "1.7.4",
     "@commencis/prettier-config": "2.0.0",
