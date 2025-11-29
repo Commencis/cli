@@ -1,4 +1,5 @@
-import { SimpleGit, simpleGit, SimpleGitOptions } from 'simple-git';
+import type { SimpleGit, SimpleGitOptions } from 'simple-git';
+import { simpleGit } from 'simple-git';
 
 const options: SimpleGitOptions = {
   baseDir: process.cwd(),

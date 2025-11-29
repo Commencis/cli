@@ -1,5 +1,5 @@
-import { templateConfigMap, TemplateData } from '@/config';
-import { ExtensionId, TemplateId } from '@/types';
+import { templateConfigMap, type TemplateData } from '@/config';
+import type { ExtensionId, TemplateId } from '@/types';
 
 import packageJson from '../../package.json' with { type: 'json' };
 
