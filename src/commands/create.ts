@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 
+import type { TemplateId } from '@/types';
 import { setupTemplate } from '@/helpers';
-import { TemplateId } from '@/types';
 import { printLogo, validateProjectName, validateTemplate } from '@/utils';
 
 import { getProjectName, getSelectedTemplate } from '@/prompts';

@@ -1,5 +1,5 @@
 import { templateConfigMap } from '@/config';
-import { TemplateId } from '@/types';
+import type { TemplateId } from '@/types';
 
 export const TEMPLATE_IDS: TemplateId[] = Object.keys(
   templateConfigMap

@@ -5,7 +5,7 @@ import path from 'node:path';
 import hbs from 'handlebars';
 import ora from 'ora';
 
-import { TemplateId } from '@/types';
+import type { TemplateId } from '@/types';
 import { getTemplateDataById } from '@/utils';
 
 import { cleanUpDirectory } from './cleanUpDirectory';

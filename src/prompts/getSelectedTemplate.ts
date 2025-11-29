@@ -1,6 +1,6 @@
 import enquirer from 'enquirer';
 
-import { TemplateId } from '@/types';
+import type { TemplateId } from '@/types';
 
 export async function getSelectedTemplate(): Promise<TemplateId> {
   const response = await enquirer.prompt<{ templateId: TemplateId }>({

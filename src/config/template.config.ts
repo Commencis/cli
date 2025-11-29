@@ -1,4 +1,4 @@
-import { ExtensionId, TemplateId } from '@/types';
+import type { ExtensionId, TemplateId } from '@/types';
 
 type TemplateConfig = {
   name: string;
