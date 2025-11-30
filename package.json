@@ -23,7 +23,7 @@
   ],
   "type": "module",
   "engines": {
-    "node": ">=22.14"
+    "node": ">=22.16"
   },
   "packageManager": "pnpm@10.24.0",
   "scripts": {
@@ -59,7 +59,7 @@
     "@commencis/prettier-config": "2.0.0",
     "@commitlint/cli": "20.1.0",
     "@svitejs/changesets-changelog-github-compact": "1.2.0",
-    "@types/node": "22.19.1",
+    "@types/node": "24.10.1",
     "@types/validate-npm-package-name": "4.0.2",
     "eslint": "9.39.1",
     "husky": "9.1.7",
