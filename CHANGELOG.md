@@ -1,5 +1,29 @@
 # @commencis/cli
 
+## 2.0.0
+
+### Major Changes
+
+- [BreakingChange]: @commencis/cli now requires node >=22.16 and the project itself uses v24.11 ([#200](https://github.com/Commencis/cli/pull/200))
+
+### Minor Changes
+
+- chore(deps): update dependency validate-npm-package-name to v7 ([#196](https://github.com/Commencis/cli/pull/196))
+
+### Patch Changes
+
+- chore(deps): update dependency ora to v9 ([#197](https://github.com/Commencis/cli/pull/197))
+
+- chore(deps): update lock file after major dependency updates ([#199](https://github.com/Commencis/cli/pull/199))
+
+- chore(deps): lock file maintenance ([#180](https://github.com/Commencis/cli/pull/180))
+
+- chore(deps): update all non-major dependencies ([#190](https://github.com/Commencis/cli/pull/190))
+
+- chore(deps): update dependency @commencis/eslint-config to v2 ([#179](https://github.com/Commencis/cli/pull/179))
+
+- chore(deps): update dependency @commitlint/cli to v20 ([#198](https://github.com/Commencis/cli/pull/198))
+
 ## 1.4.5
 
 ### Patch Changes
