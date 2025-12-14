@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 2.1.0
+
+### Minor Changes
+
+- chore: update dependencies & node to v24.12 ([#202](https://github.com/Commencis/cli/pull/202))
+
 ## 2.0.0
 
 ### Major Changes
