@@ -56,7 +56,7 @@
     "@changesets/cli": "2.29.8",
     "@commencis/commitlint-config": "2.0.0",
     "@commencis/eslint-config": "2.4.0",
-    "@commencis/prettier-config": "2.1.0",
+    "@commencis/prettier-config": "3.1.0",
     "@commitlint/cli": "20.2.0",
     "@svitejs/changesets-changelog-github-compact": "1.2.0",
     "@types/node": "24.10.4",
