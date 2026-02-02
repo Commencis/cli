@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 2.2.0
+
+### Minor Changes
+
+- chore: update dependencies including starter-react-vite@2.8.0 ([#212](https://github.com/Commencis/cli/pull/212))
+
 ## 2.1.0
 
 ### Minor Changes
