@@ -69,6 +69,7 @@
     "typescript": "5.9.3"
   },
   "templateDependencies": {
+    "@commencis/starter-nextjs": "1.0.0",
     "@commencis/starter-react-vite": "2.10.0",
     "@commencis/template-markdown": "1.0.0"
   }
