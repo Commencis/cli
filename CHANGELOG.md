@@ -1,5 +1,13 @@
 # @commencis/cli
 
+## 3.0.0
+
+### Major Changes
+
+- feat: update starter-react-vite to v2.10.0 ([#216](https://github.com/Commencis/cli/pull/216))
+
+  feat: add starter-nextjs to templates
+
 ## 2.2.0
 
 ### Minor Changes
