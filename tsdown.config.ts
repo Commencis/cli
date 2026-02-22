@@ -1,9 +1,8 @@
-import { defineConfig } from 'tsup';
+import { defineConfig } from 'tsdown';
 
 export default defineConfig({
   entry: ['src/cli.ts'],
-  target: 'node18',
+  target: 'es2020',
   format: ['esm'],
   clean: true,
-  shims: false,
 });

@@ -2,11 +2,25 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { PACKAGE_DEFAULTS } from '@/constants';
+import { omitKeys } from '@/utils/omitKeys';
 
-export async function updatePackageData(
-  directoryPath: string,
-  projectName: string
-): Promise<{ templateVersion: string }> {
+type UpdatePackageDataArgs = {
+  directoryPath: string;
+  projectName: string;
+  scriptsToRemove?: string[];
+  dependenciesToRemove?: string[];
+  devDependenciesToRemove?: string[];
+};
+
+export async function updatePackageData({
+  directoryPath,
+  projectName,
+  scriptsToRemove,
+  dependenciesToRemove,
+  devDependenciesToRemove,
+}: UpdatePackageDataArgs): Promise<{
+  templateVersion: string;
+}> {
   try {
     const packageJsonPath = path.join(directoryPath, 'package.json');
     const packageJsonData = await fs.readFile(packageJsonPath, 'utf-8');
@@ -18,8 +32,18 @@ export async function updatePackageData(
       author: _author,
       version: templateVersion,
       build,
+      scripts,
+      dependencies,
+      devDependencies,
       ...originalPackageJsonData
     } = JSON.parse(packageJsonData);
+
+    const updatedScripts = omitKeys(scripts, scriptsToRemove);
+    const updatedDependencies = omitKeys(dependencies, dependenciesToRemove);
+    const updatedDevDependencies = omitKeys(
+      devDependencies,
+      devDependenciesToRemove
+    );
 
     const updatedPackageJson = {
       name: projectName,
@@ -27,6 +51,9 @@ export async function updatePackageData(
       build,
       license: PACKAGE_DEFAULTS.license,
       private: PACKAGE_DEFAULTS.private,
+      scripts: updatedScripts,
+      dependencies: updatedDependencies,
+      devDependencies: updatedDevDependencies,
       ...originalPackageJsonData,
     };
 

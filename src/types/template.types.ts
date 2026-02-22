@@ -1,3 +1,3 @@
-export type TemplateId = 'react-vite';
+export type TemplateId = 'react-vite' | 'nextjs';
 
 export type ExtensionId = 'template-markdown';

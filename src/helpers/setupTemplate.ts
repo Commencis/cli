@@ -19,7 +19,15 @@ export async function setupTemplate(
   projectName: string,
   targetPath: string = process.cwd()
 ): Promise<void> {
-  const { name, url, version, filesToRemove } = getTemplateDataById(templateId);
+  const {
+    name,
+    url,
+    version,
+    filesToRemove,
+    scriptsToRemove,
+    dependenciesToRemove,
+    devDependenciesToRemove,
+  } = getTemplateDataById(templateId);
   const {
     name: mdExtensionName,
     url: mdExtensionUrl,
@@ -69,7 +77,13 @@ export async function setupTemplate(
     await fs.writeFile(path.join(tempDir, 'README.md'), readmeMd);
 
     // Update package.json
-    const { templateVersion } = await updatePackageData(tempDir, projectName);
+    const { templateVersion } = await updatePackageData({
+      directoryPath: tempDir,
+      projectName,
+      scriptsToRemove,
+      dependenciesToRemove,
+      devDependenciesToRemove,
+    });
 
     // Copy files to the target directory
     await fs.cp(tempDir, targetDir, { recursive: true, force: true });

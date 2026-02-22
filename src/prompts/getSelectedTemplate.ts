@@ -9,6 +9,10 @@ export async function getSelectedTemplate(): Promise<TemplateId> {
     message: 'Choose a starter template for your project:',
     choices: [
       {
+        message: 'Next.js',
+        name: 'nextjs',
+      },
+      {
         message: 'React-Vite',
         name: 'react-vite',
       },
