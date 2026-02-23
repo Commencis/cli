@@ -36,8 +36,9 @@
     "lint:fix:format": "prettier \"**/*.{json,yaml,md}\" --write",
     "lint": "pnpm run \"/^lint:check:.*/\"",
     "lint:fix": "pnpm run \"/^lint:fix:.*/\"",
+    "update:deps": "pnpm update --no-save",
     "changeset": "changeset",
-    "version": "changeset version && pnpm install --no-frozen-lockfile",
+    "changeset:version": "changeset version && pnpm install --no-frozen-lockfile",
     "ci:review": "pnpm run lint",
     "precommit": "lint-staged",
     "prepare": "husky"

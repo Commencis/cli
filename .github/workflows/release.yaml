@@ -35,7 +35,7 @@ jobs:
       - name: Create Release Pull Request
         uses: changesets/action@v1
         with:
-          version: pnpm run version
+          version: pnpm run changeset:version
           publish: npx changeset publish
           commit: 'ci(release): version packages'
           title: 'ci(release): version packages'
