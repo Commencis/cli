@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 3.0.1
+
+### Patch Changes
+
+- feat: update starter-nextjs to v1.0.1 ([#218](https://github.com/Commencis/cli/pull/218))
+
 ## 3.0.0
 
 ### Major Changes
