@@ -50,7 +50,7 @@
     "gradient-string": "3.0.0",
     "handlebars": "4.7.8",
     "ora": "9.3.0",
-    "simple-git": "3.32.2",
+    "simple-git": "3.32.3",
     "validate-npm-package-name": "7.0.2"
   },
   "devDependencies": {
