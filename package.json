@@ -48,7 +48,7 @@
     "commander": "14.0.3",
     "enquirer": "2.4.1",
     "gradient-string": "3.0.0",
-    "handlebars": "4.7.8",
+    "handlebars": "4.7.9",
     "ora": "9.3.0",
     "simple-git": "3.32.2",
     "validate-npm-package-name": "7.0.2"
