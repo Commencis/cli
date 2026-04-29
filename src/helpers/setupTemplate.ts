@@ -8,10 +8,12 @@ import ora from 'ora';
 import type { TemplateId } from '@/types';
 import { getTemplateDataById } from '@/utils';
 
+import { assertPnpmAvailable } from './assertPnpmAvailable';
 import { cleanUpDirectory } from './cleanUpDirectory';
 import { cleanUpTemplateFiles } from './cleanUpTemplateFiles';
 import { cloneTemplateRepository } from './cloneTemplateRepository';
 import { createMetaData } from './createMetaData';
+import { syncLockfile } from './syncLockfile';
 import { updatePackageData } from './updatePackageData';
 
 export async function setupTemplate(
@@ -33,6 +35,14 @@ export async function setupTemplate(
     url: mdExtensionUrl,
     version: mdExtensionVersion,
   } = getTemplateDataById('template-markdown');
+
+  const hasPackagesToRemove =
+    (dependenciesToRemove?.length ?? 0) > 0 ||
+    (devDependenciesToRemove?.length ?? 0) > 0;
+
+  if (hasPackagesToRemove) {
+    await assertPnpmAvailable();
+  }
 
   const targetDir = path.resolve(targetPath, projectName);
   const tempDir = path.join(
@@ -85,6 +95,11 @@ export async function setupTemplate(
       devDependenciesToRemove,
     });
 
+    await syncLockfile({
+      directoryPath: tempDir,
+      shouldSync: hasPackagesToRemove,
+    });
+
     // Copy files to the target directory
     await fs.cp(tempDir, targetDir, { recursive: true, force: true });
 
@@ -96,6 +111,7 @@ export async function setupTemplate(
     );
   } catch (error) {
     spinner.fail(`Failed to set up template: ${error}`);
+    throw error;
   } finally {
     await Promise.all([cleanUpDirectory(tempDir), cleanUpDirectory(mdTempDir)]);
   }
