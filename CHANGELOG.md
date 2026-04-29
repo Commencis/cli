@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 3.1.0
+
+### Minor Changes
+
+- feat: sync lockfile after project creation ([#226](https://github.com/Commencis/cli/pull/226))
+
 ## 3.0.1
 
 ### Patch Changes
