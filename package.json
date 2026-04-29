@@ -62,7 +62,7 @@
     "@svitejs/changesets-changelog-github-compact": "1.2.0",
     "@types/node": "24.12.2",
     "@types/validate-npm-package-name": "4.0.2",
-    "eslint": "9.39.4",
+    "eslint": "10.2.1",
     "husky": "9.1.7",
     "lint-staged": "16.4.0",
     "prettier": "3.8.3",
