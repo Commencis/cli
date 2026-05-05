@@ -11,10 +11,10 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
 
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
-    }
+      "@/*": ["./src/*"]
+    },
+    "types": ["node"]
   },
   "include": ["src", "tsdown.config.ts"]
 }

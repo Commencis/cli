@@ -1,2 +1,5 @@
+nodeVersion: 24.15.0
+engineStrict: true
+dedupePeers: true
 onlyBuiltDependencies:
   - esbuild

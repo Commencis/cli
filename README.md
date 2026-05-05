@@ -65,15 +65,14 @@ npx @commencis/cli create my-app --template react-vite
 
 #### Node.js
 
-Before you begin, ensure you have `node: >= 22.14` installed on your system.
+Before you begin, ensure you have `node: >= 24.15` installed on your system.
 
 #### pnpm
 
 This project uses `pnpm` as the package manager. You can install it either by activating with `corepack` which is the recommended way:
 
 ```bash
-corepack prepare pnpm@latest --activate
-corepack enable pnpm
+corepack enable
 ```
 
 or install globally on your system with npm.
