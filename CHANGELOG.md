@@ -1,5 +1,13 @@
 # @commencis/cli
 
+## 3.2.0
+
+### Minor Changes
+
+- - feat: update starter-nextjs to v2.1.0 ([`71e5375`](https://github.com/Commencis/cli/commit/71e537584ee57fc00aee7164009df9597fd8aa7c))
+  - feat: migrate to typescript v6
+  - chore(deps): update minor dependencies
+
 ## 3.1.0
 
 ### Minor Changes
