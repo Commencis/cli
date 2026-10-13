@@ -70,7 +70,7 @@
     "typescript": "6.0.3"
   },
   "templateDependencies": {
-    "@commencis/starter-nextjs": "2.1.0",
+    "@commencis/starter-nextjs": "3.0.0",
     "@commencis/starter-react-vite": "2.10.0",
     "@commencis/template-markdown": "1.0.0"
   }
