@@ -1,5 +1,11 @@
 # @commencis/cli
 
+## 3.4.0
+
+### Minor Changes
+
+- chore: update starter-nextjs to use v3.2.0 ([#243](https://github.com/Commencis/cli/pull/243))
+
 ## 3.3.0
 
 ### Minor Changes
