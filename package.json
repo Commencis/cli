@@ -23,7 +23,7 @@
   ],
   "type": "module",
   "engines": {
-    "node": ">=24.15.0"
+    "node": "24.22.2"
   },
   "packageManager": "pnpm@10.33.3",
   "scripts": {
