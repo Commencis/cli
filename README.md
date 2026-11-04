@@ -65,7 +65,7 @@ npx @commencis/cli create my-app --template react-vite
 
 #### Node.js
 
-Before you begin, ensure you have `node: >= 24.15` installed on your system.
+Before you begin, ensure you have a Node.js version that satisfies the `engines.node` field in [`package.json`](package.json) installed on your system. If you use [nvm](https://github.com/nvm-sh/nvm), run `nvm use` to switch to the version pinned in [`.nvmrc`](.nvmrc).
 
 #### pnpm
 
