@@ -31,8 +31,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       validate-npm-package-name:
-        specifier: 7.0.2
-        version: 7.0.2
+        specifier: 8.0.0
+        version: 8.0.0
     devDependencies:
       '@changesets/cli':
         specifier: 2.31.1
@@ -2350,9 +2350,9 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
-  validate-npm-package-name@7.0.2:
-    resolution: {integrity: sha512-hVDIBwsRruT73PbK7uP5ebUt+ezEtCmzZz3F59BSr2F6OVFnJ/6h8liuvdLrQ88Xmnk6/+xGGuq+pG9WwTuy3A==}
-    engines: {node: ^20.17.0 || >=22.9.0}
+  validate-npm-package-name@8.0.0:
+    resolution: {integrity: sha512-SCv6OOV6Xj2/3cXy3dGmADluJTNcL3o7hZAglNPTe+WYuEuvxgJzxPrSDLZhF+CwyQOubqgecjMmTJGMVLWjYQ==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
 
   verkit@0.5.0:
     resolution: {integrity: sha512-u4J1hr6Y+C/hit34GwL3eIcUf3wngT8TlYUjK7tk0jxydKLAq3sYvifjdTDA6U3KCKRcQCQDGf/srjxfZF3l7g==}
@@ -4970,7 +4970,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  validate-npm-package-name@7.0.2: {}
+  validate-npm-package-name@8.0.0: {}
 
   verkit@0.5.0: {}
 
