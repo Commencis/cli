@@ -25,7 +25,7 @@
   "engines": {
     "node": "24.22.2"
   },
-  "packageManager": "pnpm@11.28.10",
+  "packageManager": "pnpm@12.16.1",
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown",
