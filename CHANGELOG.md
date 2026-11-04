@@ -1,5 +1,23 @@
 # @commencis/cli
 
+## 3.5.0
+
+### Minor Changes
+
+- chore: update dependencies and re-create lock file ([#247](https://github.com/Commencis/cli/pull/247))
+
+### Patch Changes
+
+- fix(deps): update all non-major dependencies ([#230](https://github.com/Commencis/cli/pull/230))
+
+- chore(deps): update pnpm to v12 ([#246](https://github.com/Commencis/cli/pull/246))
+
+- chore(deps): update dependency @commitlint/cli to v21 ([#233](https://github.com/Commencis/cli/pull/233))
+
+- chore(deps): update dependency lint-staged to v17 ([#234](https://github.com/Commencis/cli/pull/234))
+
+- fix(deps): update dependency simple-git to v4 [security] ([#242](https://github.com/Commencis/cli/pull/242))
+
 ## 3.4.0
 
 ### Minor Changes
