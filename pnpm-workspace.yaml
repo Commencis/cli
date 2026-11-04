@@ -1,4 +1,8 @@
 engineStrict: true
 dedupePeers: true
+saveExact: true
+strictDepBuilds: true
 onlyBuiltDependencies:
   - esbuild
+minimumReleaseAgeExclude:
+  - '@commencis/*'
