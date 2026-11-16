@@ -171,8 +171,8 @@ importers:
         specifier: 6.0.1
         version: 6.0.1
       commander:
-        specifier: 15.0.0
-        version: 15.0.0
+        specifier: 15.1.0
+        version: 15.1.0
       enquirer:
         specifier: 2.4.1
         version: 2.4.1
@@ -200,10 +200,10 @@ importers:
         version: 4.1.1(@commitlint/cli@21.2.4)
       '@commencis/eslint-config':
         specifier: 3.8.1
-        version: 3.8.1(eslint@9.39.5)(prettier@3.9.10)(supports-color@7.2.0)(typescript@6.0.3)
+        version: 3.8.1(eslint@9.39.5)(prettier@3.10.1)(supports-color@7.2.0)(typescript@6.0.3)
       '@commencis/prettier-config':
         specifier: 3.4.0
-        version: 3.4.0(prettier@3.9.10)
+        version: 3.4.0(prettier@3.10.1)
       '@commitlint/cli':
         specifier: 21.2.4
         version: 21.2.4(conventional-commits-parser@7.1.4)(typescript@6.0.3)
@@ -226,8 +226,8 @@ importers:
         specifier: 17.6.0
         version: 17.6.0
       prettier:
-        specifier: 3.9.10
-        version: 3.9.10
+        specifier: 3.10.1
+        version: 3.10.1
       tsdown:
         specifier: 0.23.7
         version: 0.23.7(typescript@6.0.3)
@@ -1031,8 +1031,8 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  commander@15.0.0:
-    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
     engines: {node: '>=22.12.0'}
 
   concat-map@0.0.1:
@@ -1879,8 +1879,8 @@ packages:
     resolution: {integrity: sha512-SxToR7P8Y2lWmv/kTzVLC1t/GDI2WGjMwNhLLE9qtH8Q13C+aEmuRlzDst4Up4s0Wc8sF2M+J57iB3cMLqftfg==}
     engines: {node: '>=6.0.0'}
 
-  prettier@3.9.10:
-    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
+  prettier@3.10.1:
+    resolution: {integrity: sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2554,14 +2554,14 @@ snapshots:
     optionalDependencies:
       '@commitlint/cli': 21.2.4(conventional-commits-parser@7.1.4)(typescript@6.0.3)
 
-  '@commencis/eslint-config@3.8.1(eslint@9.39.5)(prettier@3.9.10)(supports-color@7.2.0)(typescript@6.0.3)':
+  '@commencis/eslint-config@3.8.1(eslint@9.39.5)(prettier@3.10.1)(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@next/eslint-plugin-next': 16.4.3(eslint@9.39.5)
       '@typescript-eslint/utils': 8.72.1(eslint@9.39.5)(supports-color@7.2.0)(typescript@6.0.3)
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
       eslint-config-prettier: 10.1.8(eslint@9.39.5)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.5)
-      eslint-plugin-prettier: 5.5.7(eslint-config-prettier@10.1.8)(eslint@9.39.5)(prettier@3.9.10)
+      eslint-plugin-prettier: 5.5.7(eslint-config-prettier@10.1.8)(eslint@9.39.5)(prettier@3.10.1)
       eslint-plugin-react: 7.37.5(eslint@9.39.5)
       eslint-plugin-react-hooks: 7.1.1(eslint@9.39.5)(supports-color@7.2.0)
       eslint-plugin-simple-import-sort: 14.0.0(eslint@9.39.5)
@@ -2573,9 +2573,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@commencis/prettier-config@3.4.0(prettier@3.9.10)':
+  '@commencis/prettier-config@3.4.0(prettier@3.10.1)':
     dependencies:
-      prettier: 3.9.10
+      prettier: 3.10.1
 
   '@commitlint/cli@21.2.4(conventional-commits-parser@7.1.4)(typescript@6.0.3)':
     dependencies:
@@ -3240,7 +3240,7 @@ snapshots:
 
   color-name@1.1.4: {}
 
-  commander@15.0.0: {}
+  commander@15.1.0: {}
 
   concat-map@0.0.1: {}
 
@@ -3491,10 +3491,10 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-prettier@5.5.7(eslint-config-prettier@10.1.8)(eslint@9.39.5)(prettier@3.9.10):
+  eslint-plugin-prettier@5.5.7(eslint-config-prettier@10.1.8)(eslint@9.39.5)(prettier@3.10.1):
     dependencies:
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
-      prettier: 3.9.10
+      prettier: 3.10.1
       prettier-linter-helpers: 1.0.1
       synckit: 0.12.3
     optionalDependencies:
@@ -4178,7 +4178,7 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier@3.9.10: {}
+  prettier@3.10.1: {}
 
   prop-types@15.8.1:
     dependencies:
