@@ -50,7 +50,7 @@
     "gradient-string": "3.0.0",
     "handlebars": "4.7.10",
     "ora": "10.0.0",
-    "simple-git": "4.0.2",
+    "simple-git": "4.1.0",
     "validate-npm-package-name": "8.0.0"
   },
   "devDependencies": {
@@ -60,11 +60,11 @@
     "@commencis/prettier-config": "3.4.0",
     "@commitlint/cli": "21.2.4",
     "@svitejs/changesets-changelog-github-compact": "1.2.0",
-    "@types/node": "24.19.2",
+    "@types/node": "24.19.4",
     "@types/validate-npm-package-name": "4.0.2",
     "eslint": "9.39.5",
     "husky": "9.1.7",
-    "lint-staged": "17.6.0",
+    "lint-staged": "17.6.2",
     "prettier": "3.10.1",
     "tsdown": "0.23.7",
     "typescript": "6.0.3"
